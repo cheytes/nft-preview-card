@@ -1,21 +1,21 @@
-  * {
+* {
 	box-sizing: border-box;
 }
-
 
 body {
 	color: white;
 	background-color: hsl(217, 54%, 11%);
 	font-family: 'Outfit', sans-serif;
-	/*font-family: 'Saira Condensed', sans-serif;*/
 	margin: 0;
 	padding: 0;
 }
 
+/**************** CODED BY ****************/
+
 #attribution {
-	font-size: 12px; 
+	font-size: 10px; 
 	text-align: center; 
-} /* I want this to act as a footer */
+} 
 
 #attribution a { 
 	color: hsl(178, 100%, 50%);
@@ -28,47 +28,60 @@ body {
 	border: 1px solid hsl(178, 100%, 50%);
 	border-radius: 10px;
 	padding: 4px;
+	background-color: hsl(178, 100%, 50%);
+	color: hsl(217, 54%, 11%);
+	opacity: 0.75;
 }
 
-#attribution > p {
-	margin-top: -13%;
-}
+/******************* CARD ***************/
 
-/*.source {
-	text-decoration: none;
-}*/
+.container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
+}
+	
 
 .overlay {
 	width: 280px;
-  	margin: 15% auto;
   	height: 500px;
   	background-color: hsl(216, 50%, 16%);
   	border-radius: 10px;
 }
 
-	/***** image *****/
-img {
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-  	width: 85%; 
-  	height: 250px;
-  	/*padding-top: 20px;*/
+/***************** IMAGE ****************/
+
+.svg {
+	position: absolute;
+	opacity: 0;
 }
 
-.img {
+.svg:hover {
+	opacity: 0.8;
+	background: hsla(178, 100%, 50%, 0.568);
+}
+
+.parent {
 	padding-top: 18px;
 }
 
-img.round {
+.round img {
+	margin: 0 15px; 
+  	height: 250px;
 	border-radius: 10px;
+}
+
+.size {
+	width: auto;
 }
 
 .info {
 	margin: 0 21px;
 }
 
-	/******* header *******/
+/****************** HEADER *****************/
+
 #header {
 	margin: 15px 0px;
 	font-size: 18px;
@@ -84,7 +97,8 @@ img.round {
 	color: hsl(178, 100%, 50%);
 }
 
-	/****** paragraph ******/
+/***************** PARAGRAPH ************/
+
 .para {
 	font-size: 15px;
 	margin-bottom: 22px;
@@ -96,17 +110,13 @@ img.round {
 	color: hsl(215, 51%, 70%);
 }
 
-#hr {
+.hr {
 	height: 1px;
 	background-color: hsl(215, 32%, 27%);
 	border: none;
 }
 
-	/******* Creation tag *******/
-
-#creation, hr {
-	/*clear: both*/;
-}
+/****************** CREATION TAG *************/
 
 #creation a {
 	color: white;
@@ -121,7 +131,7 @@ img.round {
 	font-size: 14px;
 	font-weight: 300;
 	float: left;
-	margin: 12px 10px 10px 14px;
+	margin: 12px 10px 0px 14px;
 }
 
 .avatar {
@@ -133,7 +143,8 @@ img.round {
 	margin-top: 5px;
 }
 
-	/***** ICONS *****/
+/**************** ICONS ******************/
+
 #days .icon {
 	float: left;
 	margin-right: 6px;
@@ -153,7 +164,6 @@ img.round {
 	font-size: 13px;
 	display: inline-block;
 	margin-bottom: 16px;
-	/*width: 100px;*/
 }
 
 #days {
