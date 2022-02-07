@@ -60,6 +60,7 @@ body {
 .svg:hover {
 	opacity: 0.8;
 	background: hsla(178, 100%, 50%, 0.568);
+	padding: 100px;
 }
 
 .parent {
